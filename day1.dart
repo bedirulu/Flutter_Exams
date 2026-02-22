@@ -11,11 +11,15 @@ class Uygulamam extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(fontFamily: ('Nunito')),
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.indigo.shade200,
           centerTitle: true,
-          title: Text('Uygulamam'),
+          title: Text(
+            'Uygulamam',
+            style: TextStyle(fontWeight: FontWeight.w600, color: Colors.white),
+          ),
         ),
         body: Text('merhaba'),
       ),
